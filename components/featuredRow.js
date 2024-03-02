@@ -10,8 +10,8 @@ export default function FeaturedRow({title, restaurants, description}) {
     <View>
      <View className="flex-row justify-between items-center px-4">
         <View>
-            <Text className="font-bold text-lg">{title}a</Text>
-            <Text className="text-gray-500 text-xs">h{description}</Text>
+            <Text className="font-bold text-lg">{title}</Text>
+            <Text className="text-gray-500 text-xs">{description}</Text>
 
         </View>
         <TouchableOpacity>
@@ -27,7 +27,7 @@ export default function FeaturedRow({title, restaurants, description}) {
         }}
         className="overflow-visible py-5"
         >
-            {/* {
+           {
                 restaurants.map((restaurant, index)=>{
                     return(
                         <RestaurantCard
@@ -36,7 +36,7 @@ export default function FeaturedRow({title, restaurants, description}) {
                         />
                     )
                 })
-            }  */}
+            }  
         </ScrollView>
     </View>
   )
