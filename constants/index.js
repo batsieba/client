@@ -142,5 +142,6 @@ export const featured = [
         }
       ]
     }
+    
   ];
   

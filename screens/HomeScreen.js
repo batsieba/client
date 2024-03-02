@@ -42,7 +42,7 @@ export default function HomeScreen() {
         <View className="mt-5">
             {
                 [featured,featured, featured].map((item,index)=>{
-                    // console.log(item.title);
+                    console.log(item[0].title);
                     return(
                         <FeaturedRow
                             key={index}
