@@ -45,6 +45,7 @@ export const featured = [
           lng: 45.1234,
           lat: 25.6789,
           address: "123 Spice Street, Kampala, Uganda",
+          description: "Hot and Spicy pizzas",
           stars: 4.5,
           reviews: "4.4k",
           category: "Indian",
@@ -79,6 +80,7 @@ export const featured = [
           lng: 45.6789,
           lat: 25.1234,
           address: "456 Burger Avenue, Kampala, Uganda",
+          description: "Hot and Spicy pizzas",
           stars: 4.2,
           reviews: "3.8k",
           category: "American",
@@ -113,6 +115,7 @@ export const featured = [
           lng: 45.3456,
           lat: 25.5678,
           address: "789 Pasta Lane, Kampala, Uganda",
+          description: "Hot and Spicy pizzas",
           stars: 4.8,
           reviews: "5.2k",
           category: "Italian",
@@ -142,6 +145,6 @@ export const featured = [
         }
       ]
     }
-    
+
   ];
   
