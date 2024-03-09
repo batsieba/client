@@ -17,13 +17,15 @@ export default function RestaurantScreen() {
     let item = params;
     const dispatch  = useDispatch();
     
-    // check if restaurant has id and data
-    if(item && item.id){
-        dispatch(setRestaurant({...item})) //pass item as object and set restaurant into a redux
-    }
+    
 
     useEffect(()=>{
 
+        // check if restaurant has id and data
+    if(item && item.id){
+        dispatch(setRestaurant({...item})) //pass item as object and set restaurant into a redux
+    }
+    
     },[])
   return (
     <View>

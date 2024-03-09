@@ -5,16 +5,21 @@ import { useNavigation } from '@react-navigation/native';
 import MapView, {Marker} from 'react-native-maps';
 import { themeColors } from '../theme';
 import * as Icon from "react-native-feather";
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { selectRestaurant } from '../slices/restaurantSlice';
+import { emptyCart } from '../slices/cartSlice';
 
 
 
 export default function DeliveryScreen() {
     const restaurant = useSelector(selectRestaurant);
     const navigation = useNavigation();
-    console.log(restaurant.name)
-  return (
+    const dispatch = useDispatch();
+    const cancelOrder = ()=>{
+        navigation.navigate('Home');
+        dispatch(emptyCart())
+    }
+    return (
     <View className="flex-1">
         {/* map view */}
         <MapView
@@ -80,7 +85,7 @@ export default function DeliveryScreen() {
                                 <Icon.Phone fill={themeColors.bgColor(1)} strokeWidth={1} stroke={themeColors.bgColor(1)} />
                             </TouchableOpacity>
 
-                            <TouchableOpacity onPress={()=> navigation.navigate('Home')} className="bg-white p-2 rounded-full">
+                            <TouchableOpacity onPress={cancelOrder} className="bg-white p-2 rounded-full">
                                 <Icon.X  strokeWidth={4} stroke={'red'} />
                             </TouchableOpacity>
                         </View>

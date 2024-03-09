@@ -34,12 +34,12 @@ export const categories = [
 
 export const featured = [
     {
-      id: 1,
+      id: 'a1',
       title: "Hot and Spicy",
       description: "Experience the fiery flavors of local cuisine.",
       restaurants: [
         {
-          id: 1,
+          id: 'r1',
           name: "Spice Haven",
           image: require('../assets/images/pizza.png'),
           lng: 45.1234,
@@ -51,30 +51,30 @@ export const featured = [
           category: "Indian",
           dishes: [
             {
-              id: 1,
+              id: 'd1',
               name: "Butter Chicken",
               description: "Tender chicken cooked in a rich buttery sauce.",
-              price: "$10.99",
+              price: 10.99,
               image: require('../assets/images/pizzaDish.png'),
             },
             {
-              id: 2,
+              id: 'd2',
               name: "Paneer Tikka",
               description: "Marinated cottage cheese cubes grilled to perfection.",
-              price: "$8.99",
+              price: 8.9,
               image: require('../assets/images/pizzaDish.png'),
             },
             {
-              id: 3,
+              id: 'd3',
               name: "Naan Bread",
               description: "Soft and fluffy traditional Indian bread.",
-              price: "$2.99",
+              price: 2.99,
               image: require('../assets/images/pizzaDish.png'),
             }
           ]
         },
         {
-          id: 2,
+          id: 'r2',
           name: "Burger Barn",
           image: require('../assets/images/pizza.png'),
           lng: 45.6789,
@@ -86,30 +86,30 @@ export const featured = [
           category: "American",
           dishes: [
             {
-              id: 4,
+              id: 'd4',
               name: "Classic Cheeseburger",
               description: "Juicy beef patty topped with melted cheese.",
-              price: "$9.99",
+              price: 9.99,
               image: require('../assets/images/pizzaDish.png'),
             },
             {
-              id: 5,
+              id: 'd5',
               name: "Crispy Chicken Sandwich",
               description: "Crispy fried chicken breast served on a toasted bun.",
-              price: "$8.49",
+              price: 8.49,
               image: require('../assets/images/pizzaDish.png'),
             },
             {
-              id: 6,
+              id: 'd6',
               name: "Fries",
               description: "Golden crispy fries served with ketchup.",
-              price: "$2.49",
+              price: 2.49,
               image: require('../assets/images/pizzaDish.png'),
             }
           ]
         },
         {
-          id: 3,
+          id: 'r3',
           name: "Pasta Palace",
           image: require('../assets/images/pizza.png'),
           lng: 45.3456,
@@ -121,24 +121,24 @@ export const featured = [
           category: "Italian",
           dishes: [
             {
-              id: 7,
+              id: 'd7',
               name: "Spaghetti Carbonara",
               description: "Classic Italian pasta dish with creamy sauce and bacon.",
-              price: "$12.99",
+              price: 12.99,
               image:require('../assets/images/pizzaDish.png'),
             },
             {
-              id: 8,
+              id: 'd8',
               name: "Margherita Pizza",
               description: "Traditional pizza topped with tomato sauce, mozzarella, and basil.",
-              price: "$11.49",
+              price: 11.49,
               image: require('../assets/images/pizzaDish.png'),
             },
             {
-              id: 9,
+              id: 'd9',
               name: "Tiramisu",
               description: "Decadent Italian dessert made with coffee-soaked ladyfingers and mascarpone cheese.",
-              price: "$6.99",
+              price: 6.99,
               image: require('../assets/images/pizzaDish.png'),
             }
           ]
